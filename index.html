@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <main class="content">
+    <section class="intro">
+      <h1 class="intro__title">Learn to code by watching others</h1>
+      <p class="intro__text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </p>
+    </section>
+    <section class="signup">
+      <button type="submit" class="signup__btn"><span class="wtf">Try it free 7 days</span> then $20/mo. thereafter</button>
+      <form class="signup__form" novalidate>
+        <div class="signup__form--input--container">
+          <input class="signup__form--input" type="text" name="first-name" id="first-name" placeholder="First Name">
+          <img class="signup__form--input--error-icon" src="images/icon-error.svg" alt="error icon">
+          <p class="signup__form--input--error-message"></p>
+        </div>
+        <div class="signup__form--input--container">
+          <input class="signup__form--input" type="text" name="last-name" id="last-name" placeholder="Last Name">
+          <img class="signup__form--input--error-icon" src="images/icon-error.svg" alt="error icon">
+          <p class="signup__form--input--error-message"></p>
+        </div>
+        <div class="signup__form--input--container">
+          <input class="signup__form--input" type="email" name="email" id="email" placeholder="Email Address" novalidate>
+          <img class="signup__form--input--error-icon" src="images/icon-error.svg" alt="error icon">
+          <p class="signup__form--input--error-message"></p>
+        </div>
+        <div class="signup__form--input--container">
+          <input class="signup__form--input" type="password" name="password" id="password" placeholder="Password">
+          <img class="signup__form--input--error-icon" src="images/icon-error.svg" alt="error icon">
+          <p class="signup__form--input--error-message"></p>
+        </div>
+        <button class="signup__form--btn">Claim your free trial</button>
+        <p class="signup__form--info">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+      </form>
+    </section>
+  </main>
+</body>
+<script src="app.js"></script>
+</html>
